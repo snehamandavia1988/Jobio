@@ -1,0 +1,163 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rdv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tilt"
+        android:padding="10dp">
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgClientLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/btnTopMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_topmenu" />
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <!--<TextView
+                android:id="@+id/lblLogin"
+                style="@style/styTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strLogin" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <me.zhanghai.android.materialedittext.MaterialTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <me.zhanghai.android.materialedittext.MaterialEditText
+                        android:id="@+id/edUserName"
+                        style="@style/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/strEnterUserName"
+                        app:font="@{`Ubuntu-L`}" />
+                </me.zhanghai.android.materialedittext.MaterialTextInputLayout>
+
+                <!--<TextView
+                    android:id="@+id/txtNotUser"
+                    style="@style/styFieldName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:text="@string/strNotUserName" />-->
+                <com.thomsonreuters.rippledecoratorview.RippleDecoratorView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="4dp"
+                    rdv:rdv_rippleAnimationDuration="600"
+                    rdv:rdv_rippleAnimationFrames="60"
+                    rdv:rdv_rippleAnimationPeakFrame="15"
+                    rdv:rdv_rippleColor="@color/tilt"
+                    rdv:rdv_rippleMaxAlpha="0.8"
+                    rdv:rdv_rippleRadius="50dp">
+
+                    <Button
+                        android:id="@+id/btnNotUser"
+                        style="@style/styDescWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transperant"
+                        android:padding="4dp"
+                        android:text="@string/strNotUserName"
+                        app:font="@{`Ubuntu-L`}" />
+                </com.thomsonreuters.rippledecoratorview.RippleDecoratorView>
+
+                <me.zhanghai.android.materialedittext.MaterialTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <me.zhanghai.android.materialedittext.MaterialEditText
+                        android:id="@+id/edPassword"
+                        style="@style/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/strEnterPassword"
+                        android:inputType="textPassword"
+                        app:font="@{`Ubuntu-L`}" />
+                </me.zhanghai.android.materialedittext.MaterialTextInputLayout>
+
+                <com.thomsonreuters.rippledecoratorview.RippleDecoratorView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="4dp"
+                    rdv:rdv_rippleAnimationDuration="600"
+                    rdv:rdv_rippleAnimationFrames="60"
+                    rdv:rdv_rippleAnimationPeakFrame="15"
+                    rdv:rdv_rippleColor="@android:color/white"
+                    rdv:rdv_rippleMaxAlpha="0.8"
+                    rdv:rdv_rippleRadius="50dp">
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        style="@style/btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/tilt"
+                        android:padding="4dp"
+                        android:text="@string/strLogin"
+                        app:font="@{`Ubuntu-L`}" />
+                </com.thomsonreuters.rippledecoratorview.RippleDecoratorView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txtJobio"
+                style="@style/styJobio"
+                app:font="@{`Ubuntu-M`}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/strJobio" />
+
+            <TextView
+                android:id="@+id/txtCopyRight"
+                style="@style/styDescSmallWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/txtJobio"
+                android:singleLine="false"
+                app:font="@{`Ubuntu-L`}"
+                android:text="@string/strCopyRight" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

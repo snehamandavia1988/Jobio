@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tilt">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_customer_detail" />
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@color/tilt"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                style="@style/stySubTitleWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnClose"
+                android:layout_toRightOf="@id/imgIcon"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/strCustomerDetail"
+                app:font="@{`Ubuntu-C`}" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtCustomerName"
+                style="@style/styDescWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tilt"
+                android:padding="3dp"
+                app:font="@{`Ubuntu-L`}"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/tilt"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/styDescWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strAddress"
+                        app:font="@{`Ubuntu-L`}" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        style="@style/styDescSmallWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font="@{`Ubuntu-L`}" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <TextView
+                        android:id="@+id/txtPhoneNumber"
+                        style="@style/styDescWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font="@{`Ubuntu-L`}" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <ImageButton
+                            android:id="@+id/btnChat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/tilt"
+                            android:src="@drawable/ic_chat" />
+
+                        <ImageButton
+                            android:id="@+id/btnPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/tilt"
+                            android:src="@drawable/ic_phone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

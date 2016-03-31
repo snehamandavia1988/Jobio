@@ -1,0 +1,28 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tilt"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/lvJob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@color/transperant"
+
+            android:groupIndicator="@color/transperant" />
+        <!--<ListView
+            android:id="@+id/lvJob"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:divider="@color/transperant"
+            android:dividerHeight="3dp"/>-->
+    </LinearLayout>
+</layout>

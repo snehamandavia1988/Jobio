@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rdv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tilt">
+
+    <com.thomsonreuters.rippledecoratorview.RippleDecoratorView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        rdv:rdv_rippleAnimationDuration="600"
+        rdv:rdv_rippleAnimationFrames="60"
+        rdv:rdv_rippleAnimationPeakFrame="15"
+        rdv:rdv_rippleColor="@android:color/white"
+        rdv:rdv_rippleMaxAlpha="0.8"
+        rdv:rdv_rippleRadius="50dp"
+        android:id="@+id/i">
+
+        <Spinner
+            android:id="@+id/spnDate"
+            style="@style/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tilt"
+            android:spinnerMode="dialog"
+            android:prompt="@string/strSelectDate" />
+    </com.thomsonreuters.rippledecoratorview.RippleDecoratorView>
+
+    <fragment
+        android:layout_below="@id/i"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

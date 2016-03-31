@@ -1,0 +1,1 @@
+include ':app', ':libFontBinding', ':libMaterialEditText', ':libRippleDecoratorView', ':libQRCodeReaderView', ':core', ':libMaterialDialogCommons'

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transperant">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/txtHeader"
+            style="@style/stySubTitleTile"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/lightGrey"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:font="@{`Ubuntu-C`}" />
+    </RelativeLayout>
+</layout><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transperant"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:id="@+id/imageView" />
+
+        <Button
+            android:id="@+id/expandable_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/lightGrey"
+            android:textColor="@color/tilt"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/imageView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <ListView
+            android:id="@+id/lvlData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/transperant"
+            android:dividerHeight="3dp"></ListView>
+    </LinearLayout>
+</LinearLayout>-->

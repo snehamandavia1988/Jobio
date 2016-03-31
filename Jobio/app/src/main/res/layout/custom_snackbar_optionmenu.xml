@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/stySubTitleWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transperant"
+            android:text="@string/strConfirm" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/stySubTitleWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transperant"
+            android:text="@string/strCancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtText"
+        style="@style/styDescWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/ly"
+        android:layout_weight="4"
+        android:singleLine="false"
+        android:text="@string/strMasterClear" />
+</RelativeLayout>
