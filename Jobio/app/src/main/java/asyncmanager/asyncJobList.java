@@ -18,7 +18,6 @@ import utility.MyNetwork;
  */
 public class asyncJobList extends AsyncTask<Context, Void, Void> {
     Context ctx;
-
     @Override
     protected Void doInBackground(Context... params) {
         this.ctx = ctx;
